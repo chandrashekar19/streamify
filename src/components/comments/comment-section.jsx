@@ -1,4 +1,5 @@
 import { commentsData } from "../../utils/constants";
+import CommentsList from "./comment-list";
 
 const CommentsSection = () => {
   return (

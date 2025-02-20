@@ -1,4 +1,5 @@
 import VideoCard from "./video-card";
+import PropTypes from "prop-types";
 
 export const AdVideoCard = ({ info }) => {
   return (
@@ -6,4 +7,8 @@ export const AdVideoCard = ({ info }) => {
       <VideoCard info={info} />
     </div>
   );
+};
+
+AdVideoCard.propTypes = {
+  info: PropTypes.object.isRequired,
 };

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ChatMessage = ({ name, message }) => {
   return (
     <div className="flex items-center shadow-sm p-2">
@@ -11,4 +13,10 @@ const ChatMessage = ({ name, message }) => {
     </div>
   );
 };
+
+ChatMessage.propTypes = {
+  name: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+};
+
 export default ChatMessage;

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const VideoCard = ({ info }) => {
   const { snippet, statistics } = info;
@@ -14,6 +14,23 @@ const VideoCard = ({ info }) => {
       </ul>
     </div>
   );
+};
+
+VideoCard.propTypes = {
+  info: PropTypes.shape({
+    snippet: PropTypes.shape({
+      channelTitle: PropTypes.string,
+      title: PropTypes.string,
+      thumbnails: PropTypes.shape({
+        medium: PropTypes.shape({
+          url: PropTypes.string,
+        }),
+      }),
+    }),
+    statistics: PropTypes.shape({
+      viewCount: PropTypes.string,
+    }),
+  }).isRequired,
 };
 
 export default VideoCard;

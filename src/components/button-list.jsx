@@ -1,7 +1,6 @@
-import React from "react";
 import Button from "./button";
 
-const list = ["All", "Live", "Gaming"];
+// export const list = ["All", "Live", "Gaming"];
 
 const ButtonList = () => {
   return (

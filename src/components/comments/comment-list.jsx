@@ -1,5 +1,6 @@
 import Comment from "./comment";
 
+// this commponent has implemneted recursive rendering to show nested comments in a tree like structure .
 const CommentsList = ({ comments }) => {
   return comments.map((comment, index) => (
     <div key={index}>
